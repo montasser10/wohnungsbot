@@ -34,3 +34,11 @@ Anzeigen ohne Preis- oder Flächenangabe und Werte unter 5 €/m² oder über 25
 - Preis-Leistung: Solange der Bot weniger als 8 Vergleichsangebote gesehen hat, rechnet er mit einem Richtwert von 6 €/m² (`reference_eur_per_sqm`), danach mit dem echten Schnitt.
 - Von Hand starten: `python bot.py --profile lager --dry-run` bzw. `--summary`
 - `start.bat` startet beide Suchen, die Lager-Suche läuft in einem eigenen minimierten Fenster.
+
+## Läuft auf GitHub (seit 16.11.2026)
+- Beide Suchen laufen über GitHub Actions (`.github/workflows/bot.yml`), alle 20 Minuten von ca. 6 bis 23 Uhr deutscher Zeit. Der PC kann aus sein.
+- Zugangsdaten liegen als verschlüsselte Secrets im Repo. Neu setzen: `gh secret set -f .env --repo montasser10/wohnungsbot`
+- Die Listen der schon gesendeten Anzeigen (`seen*.json`, `market*.json`) speichert der Lauf selbst ins Repo.
+- Sofort einen Lauf starten: `gh workflow run bot.yml --repo montasser10/wohnungsbot`
+- Pausieren: `gh workflow disable bot.yml --repo montasser10/wohnungsbot` (weiter mit `enable`)
+- **`start.bat` nicht parallel benutzen**, sonst kommen Anzeigen doppelt. Vor Änderungen an Dateien erst `git pull`, danach `git push`.
