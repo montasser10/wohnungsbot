@@ -36,7 +36,7 @@ Anzeigen ohne Preis- oder Flächenangabe und Werte unter 5 €/m² oder über 25
 - `start.bat` startet beide Suchen, die Lager-Suche läuft in einem eigenen minimierten Fenster.
 
 ## Läuft auf GitHub (seit 16.11.2026)
-- Beide Suchen laufen über GitHub Actions (`.github/workflows/bot.yml`), alle 20 Minuten von ca. 6 bis 23 Uhr deutscher Zeit. Der PC kann aus sein.
+- Beide Suchen laufen über GitHub Actions (`.github/workflows/bot.yml`), durchgehend alle ca. 5 Minuten (Nachtpause 23–6 Uhr). Jeder Lauf dauert ca. 5,5 Stunden und startet danach selbst den nächsten; der Zeitplan alle 3 Stunden ist nur Ersatz. Der PC kann aus sein. Das Repo ist öffentlich (unbegrenzte Laufzeit), Zugangsdaten bleiben als Secrets geheim.
 - Zugangsdaten liegen als verschlüsselte Secrets im Repo. Neu setzen: `gh secret set -f .env --repo montasser10/wohnungsbot`
 - Die Listen der schon gesendeten Anzeigen (`seen*.json`, `market*.json`) speichert der Lauf selbst ins Repo.
 - Sofort einen Lauf starten: `gh workflow run bot.yml --repo montasser10/wohnungsbot`
