@@ -1,6 +1,6 @@
 # Wohnungsbot Gießen
 
-Der Bot sucht Mietwohnungen auf **Kleinanzeigen** (Gießen + 10 km), **Immowelt** (Landkreis Gießen, neueste 30), **Ohne-Makler**, **markt.de**, **immobilo** (sammelt auch Anzeigen anderer Seiten) und **WG-Gesucht** (Gießen). Er schickt jede neue passende Anzeige einmal in deinen Telegram-Kanal. Dieselbe Wohnung auf mehreren Portalen kommt nur einmal. Orte außerhalb von ca. 10 km sortiert er über `plz_whitelist` aus. Von 23 bis 6 Uhr pausiert er (`quiet_hours`).
+Der Bot sucht Mietwohnungen auf **Kleinanzeigen** (Gießen ±20 km), **Immowelt** (Landkreis Gießen, neueste 30), **Ohne-Makler**, **markt.de**, **immobilo** (sammelt auch Anzeigen anderer Seiten) und **WG-Gesucht** (Gießen). Er schickt jede neue passende Anzeige einmal in deinen Telegram-Kanal. Dieselbe Wohnung auf mehreren Portalen kommt nur einmal. Orte außerhalb von ca. 20 km sortiert er über `plz_prefixes` und `town_whitelist` aus. Von 23 bis 6 Uhr pausiert er (`quiet_hours`).
 
 ## Einrichten (einmalig)
 1. In Telegram **@BotFather** öffnen, `/newbot` schicken und den Token kopieren.

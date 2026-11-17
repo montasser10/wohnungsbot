@@ -9,7 +9,7 @@
     "immoscout_mail"
   ],
   "kleinanzeigen_location_id": 4710,
-  "radius_km": 10,
+  "radius_km": 20,
   "kleinanzeigen_filter": "+wohnung_mieten.zimmer_d:4%2C4.5",
   "kleinanzeigen_pages": 2,
   "wggesucht_url": "https://www.wg-gesucht.de/wohnungen-in-Giessen.47.2.1.0.html",
@@ -61,30 +61,6 @@
       "wg platz"
     ],
     "require_any_words": [],
-    "plz_whitelist": [
-      "35390",
-      "35392",
-      "35394",
-      "35396",
-      "35398",
-      "35435",
-      "35440",
-      "35444",
-      "35415",
-      "35418",
-      "35423",
-      "35428",
-      "35447",
-      "35452",
-      "35457",
-      "35460",
-      "35463",
-      "35466",
-      "35625",
-      "35633",
-      "35582",
-      "35584"
-    ],
     "town_whitelist": [
       "Gießen",
       "Giessen",
@@ -103,8 +79,28 @@
       "Rabenau",
       "Hüttenberg",
       "Lahnau",
-      "Wetzlar"
-    ]
+      "Wetzlar",
+      "Butzbach",
+      "Grünberg",
+      "Hungen",
+      "Laubach",
+      "Allendorf",
+      "Solms",
+      "Aßlar",
+      "Münzenberg",
+      "Braunfels",
+      "Lahn-Dill",
+      "Gießen (Kreis)"
+    ],
+    "plz_prefixes": [
+      "353",
+      "354",
+      "355",
+      "356",
+      "35510",
+      "35516"
+    ],
+    "market_label": "4 Zi. Gießen ±20 km"
   },
   "immowelt_url": "https://www.immowelt.de/suche/mieten/wohnung/hessen/giessen-06531/ad06de132",
   "ohnemakler_url": "https://www.ohne-makler.net/immobilien/wohnung-mieten/hessen/giessen/",
